@@ -22,8 +22,8 @@ public class EmployeeAnalyzerTest {
     public void testManagerDeviationsAndLongLines() throws IOException {
         Path tmp = Files.createTempFile("employees", ".csv");
         try (BufferedWriter bw = Files.newBufferedWriter(tmp)) {
-            bw.write("EmployeeID,Name,ManagerID,Salary\n");
-            bw.write("1,CEO,,200000\n");
+            bw.write("EmployeeID,Name,Salary,ManagerID\n");
+   /*       bw.write("1,CEO,200000,,\n");
             bw.write("2,John,1,120000\n");
             bw.write("3,Mary,1,210000\n");
             bw.write("4,Steve,2,80000\n");
@@ -34,6 +34,35 @@ public class EmployeeAnalyzerTest {
             bw.write("8,Sam,7,50000\n");
             bw.write("9,Kim,8,40000\n");
             bw.write("10,Jake,9,30000\n");
+*/
+        bw.write("	123,Joe,Doe,60000, 	\n");
+bw.write("	124,Martin,Chekov,45000,123 	\n");
+bw.write("	125,Bob,Ronstad,47000,123 	\n");
+bw.write("	300,Alice,Hasacat,50000,124 	\n");
+bw.write("	305,Brett,Hardleaf,34000,300	\n");
+bw.write("	210,Maria James, 44000, 213	\n");
+bw.write("	211, Alex Montogemy, 46000, 123	\n");
+bw.write("	212, Gopal Shruthi,49000, 311	\n");
+bw.write("	213, Kiran Motwani, 51000, 511	\n");
+bw.write("	214, Kiron Kher, 33000, 413	\n");
+bw.write("	215, Deepak Sagar, 30000, 213	\n");
+bw.write("	310, Ruchi Srivastava, 40000, 124	\n");
+bw.write("	311, Trideev Roy, 35000, 211	\n");
+bw.write("	312, Umesh James, 55000,  500	\n");
+bw.write("	313, Shailesh Sagar, 53000, 123	\n");
+bw.write("	314, Mansi Pindwar, 33500, 211	\n");
+bw.write("	315, Tomas Chavosky, 51000, 123	\n");
+bw.write("	316, Phuong Jesi, 33000, 212	\n");
+bw.write("	411, Kamal Hasan, 44000, 300	\n");
+bw.write("	412, Rajnikanth, 55000, 123	\n");
+bw.write("	413, Kate Oconer, 40000, 511	\n");
+bw.write("	414, Kiran Jain, 33000, 311	\n");
+bw.write("	415, Eugena Russell,35000, 315	\n");
+bw.write("	500, Michelle Tessier, 49000, 123	\n");
+bw.write("	511, Nicolas Lallier, 44000, 300	\n");
+bw.write("	512, Michee Lella, 41000, 312	\n");
+
+        
         }
 
         EmployeeParser parser = new EmployeeParser();
