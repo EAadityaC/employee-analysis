@@ -1,0 +1,27 @@
+Id,firstName,lastName,salary,managerId  
+123,Joe,Doe,60000, 
+124,Martin,Chekov,45000,123 
+125,Bob,Ronstad,47000,123 
+300,Alice,Hasacat,50000,124 
+305,Brett,Hardleaf,34000,300
+210,Maria James, 44000, 213
+211, Alex Montogemy, 46000, 123
+212, Gopal Shruthi,49000, 311
+213, Kiran Motwani, 51000, 511
+214, Kiron Kher, 33000, 413
+215, Deepak Sagar, 30000, 213
+310, Ruchi Srivastava, 40000, 124
+311, Trideev Roy, 35000, 211
+312, Umesh James, 55000,  500
+313, Shailesh Sagar, 53000, 123
+314, Mansi Pindwar, 33500, 211
+315, Tomas Chavosky, 51000, 123
+316, Phuong Jesi, 33000, 212
+411, Kamal Hasan, 44000, 300
+412, Rajnikanth, 55000, 123
+413, Kate Oconer, 40000, 511
+414, Kiran Jain, 33000, 311
+415, Eugena Russell,35000, 315
+500, Michelle Tessier, 49000, 123
+511, Nicolas Lallier, 44000, 300
+512, Michee Lella, 41000, 312
