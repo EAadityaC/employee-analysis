@@ -24,6 +24,6 @@ java -jar target/employee-analysis-1.0-SNAPSHOT.jar /path/to/employee.csv
 
 - CSV expected format: `EmployeeID,Name,Salary,ManagerID` with header.   
 - `ManagerID` empty indicates no manager (CEO).
-- CSV parsing is simple and does not handle quoted commas. If your CSV contains embedded commas, please say so and I will update the parser.
+- CSV parsing is simple and does not handle quoted commas. If your CSV contains embedded commas or any other format, please inform so I will update the parser.
 - Cycles in the reporting chain are protected against by a visited set; broken chains (missing manager rows) stop at the missing link.
 
