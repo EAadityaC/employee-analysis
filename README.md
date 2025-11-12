@@ -14,7 +14,7 @@ This small Java console application reads an `employee.csv` file and reports:
 mvn clean package
 ```
 
-2. Run (provide path to CSV or it will try `/mnt/data/employee.csv`):
+2. Run (provide path to CSV or it will try `/employee.csv`):
 
 ```
 java -jar target/employee-analysis-1.0-SNAPSHOT.jar /path/to/employee.csv
